@@ -1,0 +1,54 @@
+<aside class="fixed left-0 top-0 h-full w-64 bg-black flex flex-col justify-between text-white items-left">
+    <div>
+        <!-- Logo -->
+        <div class="p-4 text-lg font-semibold text-white">{{title()}}</div>
+
+        <!-- New Chat button -->
+        <button class="new-button flex items-center gap-2 px-4 py-2 hover:bg-gray-800 pointer border border-gray-400
+ rounded-md mx-2 mt-2">
+            <span>＋</span>
+            <span>New Chat</span>
+        </button>
+
+        <!-- Menu -->
+        <nav class="mt-6 px-2 space-y-3 text-sm">
+            <a href="#" class="flex items-center gap-3 hover:text-gray-300">
+                🔔 Notifications
+            </a>
+            <a href="#" class="flex items-center gap-3 hover:text-gray-300">
+                👥 Community
+            </a>
+            <a href="#" class="flex items-center gap-3 hover:text-gray-300">
+                ⚙️ Commands
+            </a>
+        </nav>
+
+        <!-- Recent -->
+        <div class="mt-6 px-3 space-y-2 text-sm ">Recent</div>
+        <ul class="mt-2 px-3 space-y-1 text-sm">
+            <li class="truncate cursor-pointer hover:text-gray-300">Send me the detail file for t...</li>
+            <li class="truncate cursor-pointer hover:text-gray-300">I need to generate report</li>
+        </ul>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="p-3 space-y-3">
+        <!-- Trial Notice -->
+        <div class="bg-gray-800 p-3 rounded-md text-xs ">
+            <p>Your trial ends in <span class="font-semibold">14 days</span></p>
+            <p class="text-gray-400 mt-1">Enjoy working with reports, extract data, advanced search experience and much
+                more.</p>
+            <button
+                class="mt-2 w-full bg-green-500 text-black font-semibold py-1 rounded-md hover:bg-green-400 ">Upgrade</button>
+        </div>
+
+        <!-- User Info -->
+        <div class="flex items-center gap-2 text-sm">
+            <img src="https://via.placeholder.com/30" class="w-8 h-8 rounded-full" alt="user">
+            <div>
+                <p class="font-medium">Gustavo Franci</p>
+                <p class="text-gray-400 text-xs">Trial</p>
+            </div>
+        </div>
+    </div>
+</aside>

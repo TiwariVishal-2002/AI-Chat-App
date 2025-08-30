@@ -1,16 +1,21 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
-
-    <router-outlet />
+        
+      <router-outlet></router-outlet>
   `,
   styles: [],
 })
 export class App {
   protected readonly title = signal('client');
+
+  constructor(private router: Router) { }
+
+  isLoginPage(): boolean {
+    return this.router.url === '/login';
+  }
 }

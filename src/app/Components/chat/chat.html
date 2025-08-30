@@ -1,0 +1,61 @@
+<div
+    class="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-800 w-[calc(100%-256px)] ml-64 chat">
+    <!-- Greeting -->
+    <div class="text-center mb-8">
+        <h1 class="text-3xl font-semibold">Hi, Gustavo</h1>
+        <h2 class="text-3xl font-bold">What can I <span class="text-gray-500 font-semibold">help you with?</span></h2>
+        <p class="text-gray-500 mt-2">
+            Choose a prompt below or write your own to start chatting with Lumina.
+        </p>
+    </div>
+
+    <!-- Input box -->
+    <div class="w-full max-w-2xl mb-8">
+        <div class="flex items-center border rounded-lg px-3 py-2 bg-white shadow-sm">
+            <input type="text" placeholder="Ask a question or make a request..."
+                class="flex-grow outline-none px-2 text-gray-700 placeholder-gray-400" />
+            <button class="flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700">
+                📎 Attach
+            </button>
+            <kbd class="ml-2 px-2 py-1 text-xs bg-gray-100 border rounded text-gray-500">⌘</kbd>
+            <button
+                class="ml-3 w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 text-white">
+                ➤
+            </button>
+        </div>
+    </div>
+
+    <!-- Prompt cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-4xl">
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📊 Consolidate financial data from all subsidiaries
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📑 Generate the monthly income statement
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            🏦 Reconcile the bank accounts for March
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📝 Book a journal entry
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            🔄 Provide a 12-month cash flow forecast
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📃 Generate the quarterly profit and loss statement
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📉 Show the budget variance for Q1 compared to actuals
+        </button>
+        <button class="flex items-center gap-2 p-3 bg-white border rounded-lg shadow-sm hover:shadow-md">
+            📊 Create a real-time financial performance dashboard
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-gray-400 text-sm">
+        2024 Lumina · <a href="#" class="hover:underline">Privacy Policy</a> ·
+        <a href="#" class="hover:underline">Support</a>
+    </footer>
+</div>
